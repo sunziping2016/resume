@@ -1,26 +1,8 @@
 % !TEX program = xelatex
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rishi Shah
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass{resume}
 
-\usepackage{ctex}
+\usepackage[fontset=windows]{ctex}
 \usepackage[left=0.6in,top=0.4in,right=0.6in,bottom=0.4in]{geometry}
 \usepackage[hidelinks]{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
@@ -31,47 +13,52 @@
 \begin{document}
 
 \begin{rSection}{教育和奖学金}
-{\bf 清华大学}~\textit{软件学院本科生} \hfill {\em 2015.9 - 2020.7}\\
-GPA 3.67，排名20/83。获得过\textit{清华之友-光华奖学金}和\textit{清华之友-金立ELIFE三等奖学金}。
+\hspace*{-0.2in}\textbf{清华大学}~\textit{软件工程专业本科生} \hfill \emph{2015.9 - 2020.7} \\
+GPA 3.67，排名20/83。获得过\textit{清华之友-光华奖学金}和\textit{清华之友-金立ELIFE三等奖学金}\\
+\hspace*{-0.2in}\textbf{清华大学}~\textit{软件工程专业工学硕士} \hfill \emph{2020.9 - 2023.7} \\
+导师为周旻副研究员，从事\textit{静态分析方向}，主要研究值流图上的缺陷路径可达性分析
 \end{rSection}
 
 \begin{rSection}{技能}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-编程语言 & 精通C，能熟练运用C++、Python、JavaScript（Node.js）、Haskell，使用过汇编 \\
-机器学习 & 能熟练运用NumPy、Pandas、MatplotLib、sk-learn和PyTorch，使用过TensorFlow \\
-前后端 & 能熟练运用Vue、Koa、Express，使用过React、Three.js和Django \\
-爬虫 & 能熟练运用Scrapy和BeautifulSoap \\
-C++ & 能熟练运用Boost、Qt \\
-Linux & 日常使用ArchLinux，能熟练配置LNMP、MongoDB、Docker等等
+编程语言 & 很热爱Rust，非常熟悉C，能熟练运用C++、Python、TypeScript、Haskell等等 \\
+编译原理 & 掌握并实践了LLVM IR上的控制流分析、数据流分析、值流分析的相关算法 \\
+机器学习 & 能熟练运用NumPy、Pandas和PyTorch等科学计算库、以及Scrapy等爬虫框架 \\
+Web前后端 & 掌握Vue、React，能使用Koa、Tornado、actix搭建后端，会使用一些SQL和NoSQL \\
+其他 & 日常使用ArchLinux，混迹Geek社团，爱好打磨代码，有一定的代码洁癖
 \end{tabular}
 \end{rSection}
 
 \begin{rSection}{社工和实习经历}
-{\bf 软件学院学生科协}~\textit{技术部部长} \hfill {\em 2016.11 - 2018.1} \\
+\hspace*{-0.2in}\textbf{软件学院学生科协}~\textit{技术部部长} \hfill \emph{2016.11 - 2018.1} \\
 开发了投票、微信弹幕、抽奖等系统，并培训部员 \\
-{\bf Pony.ai}~\textit{负责自动驾驶路径规划与控制} \hfill {\em 2019.3 - 2019.8} \\
-改进了issue bot，重构了测车软件。\\
-{\bf 微软STCA}~\textit{深度学习用于代码检索} \hfill {\em 2019.7 - 2019.7} \\
-复现一个叫CODEnn的模型，重构了数据处理的代码。
+\hspace*{-0.2in}\textbf{Pony.ai}~\textit{负责自动驾驶路径规划与控制} \hfill \emph{2019.3 - 2019.8} \\
+改进了issue bot，重构了测车软件 \\
+\hspace*{-0.2in}\textbf{微软STCA}~\textit{深度学习用于代码检索} \hfill \emph{2019.7 - 2019.7} \\
+复现了CODEnn的模型，重构了数据处理的代码 \\
+\hspace*{-0.2in}\textbf{泛联新安}~\textit{值流路径可达性分析} \hfill \emph{2021.7 - 2021.7} \\
+在指针分析的基础上，构建带数据依赖条件的值流图，并最终借助SMT求解器等方法确认缺陷路径可达性
 \end{rSection}
 
 \begin{rSection}{项目}
-\textit{以下项目只是简介。详细内容请移步\underline{\url{https://szp.io/2018/12/04/my-projects/}}或GitHub。}\\
 \hspace*{-0.2in}\textbf{机器学习}\\
-\textbf{VeryTinyCnn}：只有前向传播的卷积神经网络实现，使用了标准C++11和多线程及SIMD指令优化。\\
-\textbf{Minimal-NeuralNet}：多层反向传播的神经网络，只使用了标准C++。\\
-\textbf{transfer-tensorflow}：使用TensorFlow编写的迁移学习库。\\
-\hspace*{-0.2in}\textbf{前后端}\\
-\textbf{YAWeChatTicket}：借助微信发布活动、抢票、检票的系统，有完整的用户权限系统，前后端分离，RESTful API，前端为PWA，总代码量破万。\\
-\textbf{wewall}：包含微信墙和桌面弹幕，支持emoji，包含一个爬虫自动模拟微信管理员登录爬取用户头像，被学生节使用。\\
+\textbf{THUCourseSpider}：全自动刷课脚本；爬取并标注2k个验证码后，用RNN使验证码识别准确率达到95\%\\
+\textbf{其他}：用C++、多线程和SIMD实现MLP；用NumPy实现CNN；本科曾参与龙明盛老师迁移学习库的编写\\
+\hspace*{-0.2in}\textbf{Web前后端}\\
+\textbf{YAWeChatTicket}：借助微信发布活动、抢票、检票的系统，RBAC，前后端分离，RESTful，PWA，代码破万\\
+\textbf{其他}：搭配用户信息爬虫的微信墙、抽奖和弹幕系统；实时投票系统；设计并实现简易联盟链\\
 \hspace*{-0.2in}\textbf{游戏}\\
-\textbf{Qt-PlantsVsZombies}：用Qt编写的植物大战僵尸游戏，代码量4.5k。\\
-\textbf{Collision}基于Leap Motion的体感游戏，架构采用了MVC，用Java编写。\\
+\textbf{Qt-PlantsVsZombies}：用Qt编写的高仿真植物大战僵尸游戏\\
+\textbf{其他}：用于科展的体感游戏；横版物理跑酷游戏；联网井字棋和联网贪吃蛇；躲避类HTML5小游戏；扫雷外挂\\
 \hspace*{-0.2in}\textbf{算法及底层系统}\\
-\textbf{zhihu-search-engine}：重新实现了C++中vector、list、unordered\_set等数据结构，手写了一个极快的、有良好异常处理的HTML parser，界面使用了Electron。\\
-\textbf{GraphVisualization}：部分调用了Boost图的算法，前端使用了Three.js 实现可视化。\\
-\textbf{WinminePlugin}直接读取扫雷内存，再发送窗口消息到扫雷的外挂，高一写的，这是我最早写的程序。\\
-\textbf{xv6-improved}：我带领40人的团队，一起改进一个教学用的操作系统。
+\textbf{zhihu-search-engine}：手写动态数组、链表、哈希表及容错快速的HTML解析器，使用倒排索引检索网页\\
+\textbf{ftp-server}：非阻塞IO，可通过CLI管理用户，基于bcrypt的密码检查，双栈，干净的信号处理，防御式编程\\
+\textbf{rsa-rs}：借助汇编手写高精度整数，实现了RSA密钥的生成、加密和解密，手写了openssh密钥格式的解析\\
+\textbf{ray-tracing}：多线程和AoSoA SIMD的光线追踪，借助泛型切换SIMD指令集，导出Python FFI\\
+\textbf{SoundMessage/Localization}：OFDM+QPSK调制声波传输信息，采用FMCW定位，提供Android APP\\
+\textbf{Tsmart}：导师带领的静态分析工具，在读了代码后我成为主要维护人员，修复了很多bug并做了些改进\\
+\textbf{其他}：汇编还原画图；小型数据库；函数式解释器；带领40人改进某OS；我的静态分析工具Tilly
+（开发中）
 \end{rSection}
 
 \end{document}
