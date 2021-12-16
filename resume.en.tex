@@ -1,0 +1,60 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+
+\usepackage[left=0.6in,top=1.0in,right=0.6in,bottom=1.0in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Ziping Sun}
+\address{(+86)18516279008 \\ \underline{\href{mailto:me@szp.io}{me@szp.io}} \\ \underline{\url{https://szp.io}} \\ \underline{\url{https://github.com/sunziping2016}}}
+
+\begin{document}
+\begin{rSection}{Education}
+\hspace*{-0.2in}\textbf{Tsinghua University}~\textit{BS in Software Engineering} \hfill \emph{2015.9 - 2020.7} \\
+GPA 3.67，rank 20/83 \\
+\hspace*{-0.2in}\textbf{Tsinghua University}~\textit{MSc in Software Engineering in Progress} \hfill \emph{2020.9 - 2023.7} \\
+Directed by Min Zhou, engaged in \textit{Static Program Analysis}, especially Value Flow Graphs
+\end{rSection}
+
+\begin{rSection}{Techniques}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
+Programming Languages & Rust, C/C++, Java, Python, TypeScript, Haskell, Verilog etc. \\
+Machine Learning & NumPy, Pandas, PyTorch; Crawling with Scrapy \\
+Web & Vue, React; Koa, Tornado, tokio etc.; various SQLs and NoSQLs \\
+Team Work & Leading nearly all team projects; Good at CI, Agile, Documentations \\
+Others & ArchLinux, TUNA member, perfectionist; devoted in code analysis
+\end{tabular}
+\end{rSection}
+
+\begin{rSection}{Internships}
+\hspace*{-0.2in}\textbf{Association for Science and Technology}~\textit{Minister of Technique Department} \hfill \emph{2016.11 - 2018.1} \\
+Voting System, WeChat Danmaku, Luck Draw System, training other members \\
+\hspace*{-0.2in}\textbf{Microsoft STCA}~\textit{Code search using deep learning} \hfill \emph{2019.7 - 2019.7} \\
+Implementing CODEnn, refactoring data processing \\
+\hspace*{-0.2in}\textbf{Others}: \textbf{Pony.ai}~\textit{Improving tests}~~\textbf{Megvii}~\textit{Optimizing tensor operations}~~\textbf{ValiantSec}~\textit{code analysis}
+\end{rSection}
+
+\begin{rSection}{Projects}
+\hspace*{-0.2in}\textbf{Machine Learning} \\
+\textbf{THUCourseSpider}: Automatic course crawler; over 95\% CAPTCHA recognition accuracy with RNN
+\textbf{Others}: Anime avatar generation; MLP with multi-thread and SIMD; Transfer learning library \\
+\hspace*{-0.2in}\textbf{Web Frontend \& Backend} \\
+\textbf{YAWeChatTicket}: Ticket system on WeChat; RBAC; RESTful; PWA; over 10 thousand LOC \\
+\textbf{Others}: WeWall, Danmaku; Real-time voting system; Lite consortium blockchain \\
+\hspace*{-0.2in}\textbf{Games} \\
+\textbf{Qt-PlantsVsZombies}: Fake Plants vs Zombies with Qt, available on Bilibili \texttt{BV1ub4y1v7MF} \\
+\textbf{Others}: Motion sensing game; Side-scrolling parkour game; Online Tic-tac-toe and Snake; HTML5 game; Mine sweeper cheating \\
+\hspace*{-0.2in}\textbf{Algorithms \& Low-Level Systems} \\
+\textbf{zhihu-search-engine}: Implementing vector, list, hash map and a fast HTML parser; full-text search \\
+\textbf{ftp-server}: non-blocking IO base on epoll; user management; bcrypt password encryption; dual stack \\
+\textbf{ray-tracing}: Multi-threading and generic AoSoa SIMD ray tracing; Python FFI \\
+\textbf{SoundMessage/Localization}: OFDM+QPSK sound modulation; Locating with FMCW; On Android \\
+\textbf{Others}: Implementing RSA; Assembly mspaint; Lite database; Functional interpreter; My static analysis toolkit (WIP)
+\end{rSection}
+
+\begin{rSection}{Publications}
+Cao, Z., \textbf{Sun, Z.}, et al. (2018, October) Deep Priority Hashing. In \textit{the 26th ACM MM} \\
+\textbf{Sun, Z.}, Zhou, M. (Submitted for publication) Fast and Incremental Algorithm for Dominator Tree
+\end{rSection}
+\end{document}
